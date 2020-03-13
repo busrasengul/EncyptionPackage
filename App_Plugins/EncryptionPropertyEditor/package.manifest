@@ -1,0 +1,30 @@
+﻿{
+  "propertyEditors": [
+    {
+      "alias": "Encrypted",
+      "name": "Encrypted",
+      "editor": {
+        "view": "~/App_Plugins/EncryptionPropertyEditor/encryption.html"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Hash?",
+            "description": "Does it need to be hashed? (Irreversible Encryption)",
+            "key": "hash",
+            "view": "boolean"
+          },
+          {
+            "label": "Salt?",
+            "description": "Provide a random string of characters as a salt",
+            "key": "salt",
+            "view": "textstring"
+          }
+        ]
+      }
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/EncryptionPropertyEditor/encryption.controller.js"
+  ]
+}

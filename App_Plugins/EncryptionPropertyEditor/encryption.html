@@ -1,0 +1,6 @@
+﻿<div ng-controller="EncryptionController">
+    <input ng-model="model.plaintext" ng-change="encrypt()" />
+    <input display="hidden" ng-model="model.value" />
+    <br />
+    <span style="display:none" ng-bind="model.value"></span>
+</div>
